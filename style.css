@@ -29,6 +29,18 @@ body {
     background-color: #f1f1f1;
 }
 
+.column2 {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after column */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
